@@ -1,0 +1,79 @@
+/* Figma 3D / Monochrome Dark Theme for ZenLoader */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+  --bg-color: #000000;
+  --surface-color: #0d0d0d;
+  --surface-card: #141414;
+  --border-color: #222222;
+  --border-focus: #444444;
+  --text-primary: #ffffff;
+  --text-secondary: #888888;
+  --text-muted: #555555;
+  --accent-color: #ffffff;
+  --accent-green: #00ff66;
+  --accent-red: #ff3333;
+  
+  --shadow-3d: 0 4px 0px #1c1c1c, 0 8px 16px rgba(0, 0, 0, 0.6);
+  --shadow-3d-active: 0 1px 0px #1c1c1c, 0 2px 4px rgba(0, 0, 0, 0.8);
+  --shadow-3d-green: 0 4px 0px #006622, 0 8px 16px rgba(0, 255, 102, 0.15);
+  --shadow-3d-green-active: 0 1px 0px #006622, 0 2px 4px rgba(0, 255, 102, 0.2);
+
+  /* Redline (Red & Black) variables */
+  --redline-shadow: 0 4px 0px #880000, 0 8px 16px rgba(255, 0, 0, 0.15);
+  --redline-shadow-active: 0 1px 0px #880000, 0 2px 4px rgba(255, 0, 0, 0.2);
+
+  /* Night Club (Blue & Purple) variables */
+  --club-shadow: 0 4px 0px #3b0066, 0 8px 16px rgba(139, 92, 246, 0.15);
+  --club-shadow-active: 0 1px 0px #3b0066, 0 2px 4px rgba(139, 92, 246, 0.2);
+  
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  user-select: none;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: var(--text-primary);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar for Monospaced Console */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #090909;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* Base Classes */
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.drag-region {
+  -webkit-app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+}
